@@ -31,8 +31,8 @@ func TestNewRuleConfigParser(t *testing.T) {
 
 	for _, c := range cases {
 		t.Run(c.name, func(t *testing.T) {
-			if got := NewRuleConfigParser(c.args.t); !reflect.DeepEqual(got, c.want) {
-				t.Errorf("NewRuleConfigParser() = %v, want %v", got, c.want)
+			if got := NewIRuleConfigParser(c.args.t); !reflect.DeepEqual(got, c.want) {
+				t.Errorf("NewIRuleConfigParser() = %v, want %v", got, c.want)
 			}
 		})
 	}

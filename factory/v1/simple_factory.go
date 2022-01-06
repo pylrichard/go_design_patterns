@@ -18,7 +18,7 @@ func (y yamlRuleConfigParser) Parse(data []byte) {
 	panic("implement me")
 }
 
-func NewRuleConfigParser(t string) IRuleConfigParser {
+func NewIRuleConfigParser(t string) IRuleConfigParser {
 	switch t {
 	case "json":
 		return jsonRuleConfigParser{}
